@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript103- Functions</title>
+</head>
+
+<body>
+
+    <script>
+// We would have used this Array below but instead we replace it with an object
+  // EX. let dog = ['German Sheppard', 1.5, 'Ollie'] 
+
+// This is an OBJECT => handles Complex data easier than an Array 
+// You can put define  multiple properties of data
+// You can also define names/labels called ===  "Key Value Pairs"
+let dog = {
+      name: 'Ollie',
+      breed: 'German Sheppard',
+      age: 1.5,
+      bark() {
+        // console.log(this)
+        console.log(`Woof! My name is ${this.name}!`)
+      },
+      puppies: [
+        {
+          name: 'Shelby',
+          age: 1,
+          breed: 'German Shep Mix'
+        },
+        {
+          name: 'Scooby',
+          age: 1,
+          breed: 'German Shep Mix'
+        }
+      ]
+    }
+// This will console log: Woof! My name is Ollie!
+    dog.bark()
+
+let cat = {
+  name: 'MeowMeow',
+  breed: 'Brown Tabby',
+  age: 5,
+  // this is an array within an array
+  kitties: [
+    {
+      name: `Puss`,
+      breed: 'Tiger Tabby',
+      age: 1,
+    }, 
+    {
+      name: `N' Boots`,
+      breed: 'Tiger Tabby',
+      age: 1,
+    }
+  ]
+}
+
+console.log(cat)
+// // This is called DOT NOTATION: cat.name || cat.age would render that info
+console.log(cat.breed)
+// // This is the DOT NOTATION for kitties: access it by its index[]
+console.log(cat.kitties[1])
+// // This will show spot 0 in the Array of info and console log "Breed"
+console.log(cat.kitties[0].breed)
+
+// You need the word Function
+// firstFunction can be named anything
+// () inside this you your parameter
+// {} inside this is the steps it is running
+
+    // function firstFunction () {
+
+    // }
+      // Example
+    // function greeting(x, num) {
+    //     console.log(x)
+    //     console.log(num + 5)
+    // } 
+      // greeting('Hi', 7)
+      // greeting('Hello', 4)
+      // greeting('Hey', 2)
+
+    //       FUNCTION METHOD  => pass a certain parameter
+    // function greeting () {
+      //   console.log('hello')
+    // }
+      // greeting()
+
+    // ** ARROW FUNCTION METHOD  => Use this method when you can
+    // const greeting = () => {
+      //   console.log('hello')
+    // }
+      // greeting()
+
+    // UnderScore FUNCTION METHOD => When passing Nothing through
+    // const greeting = _ => {
+    //   console.log('hello')
+    // }
+    // greeting()
+
+
+      // Example One
+    // let x = 5 
+    // const one = () => {
+    //   two(x)
+    // }
+    // const two = (a) => {
+    //   console.log(a)
+    // }
+    // one()
+
+    // let count = 0
+    // for (let i = 1; i <= 10; i++) {
+    //   count += i
+    // }
+    // console.log(count)
+
+
+// Function Calling in console
+    // function adder (a, b) {
+    //   return a + b
+    // }
+    // console.log(adder(5, 7))
+
+    // function subtractor (a, b) {
+    //   return a - b
+    // }
+    // console.log(subtractor(5, 7))
+
+    // function multiplier (a, b) {
+    //   return a * b
+    // }
+    // console.log(multiplier(5, 7))
+
+    // function divider (a, b) {
+    //   return a / b
+    // }
+    // console.log(divider(5, 7))
+
+    // function remainder (a, b) {
+    //   return a % b
+    // }
+    // console.log(remainder(5, 7))
+
+    // function greeting(x, num) {
+    //   console.log(x)
+    //   console.log(num + 5)
+    // }
+    // greeting('hello', 7)
+    // greeting('hi', 4)
+    // greeting('hey', 2)
+    </script>
+
+</body>
+
+</html>

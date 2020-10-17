@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Page 2</title>
+</head>
+<style>
+    .red{
+        color: red;
+    }
+</style>
+<body>
+
+    <!-- This is a H1 tag with "Hello World" in it -->
+    <!-- Once we have JS interact with it, we change it to "goodbye world!" -->
+    <h1 id="myHeading">Hello World!</h1>
+
+    <!-- This is an empty DIV. However, it has JS interacting with it! -->
+    <!-- Once we grab the the ElementById and set this to an innerHTML with temp literals -->
+    <div id="myDiv"></div>
+
+<script>
+
+    // Testing Element in Console Log
+    // console.log(document.getElementById('myHeading'))
+    // This logs the id of this element
+    // console.log(document.getElementById('myHeading').id)
+    // This returns whatever the text is Inside of the H1
+    // console.log(document.getElementById('myHeading').textContent)
+
+    // grab the myHeading ID set the textContent to Goodbye World!
+    // You will see in the console log under Element Section that "Hello World" DOES NOT APPEAR!
+    document.getElementById('myHeading').textContent = 'Goodbye World!'
+
+    // How to ADD CSS to Elements
+    // .classList.add is the BEST Method
+    document.getElementById('myHeading').classList.add('red')
+
+    // grad the myDiv ID set the innerHTML and place whatever we want inside of the `Temp Literals`
+    // If you open your inspect tool, you will notice that the input and button have been inserted into the "myDiv ID" section 
+    document.getElementById('myDiv').innerHTML = `
+        <input type="text">
+        <button>Click Me</button>
+    `
+     
+
+</script>
+
+
+</body>
+<!-- ID's are meant for JS -->
+<!-- Classes are meant for CSS -->
+</html>

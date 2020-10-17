@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom page 1</title>
+</head>
+<body>
+    <script>
+        // DOM
+        // Document Object Model
+
+        let dog = {
+      name: 'Ollie',
+      breed: 'German Sheppard',
+      age: 1.5,
+      bark: () => {
+        //   the arrow function makes this pass the dog and go to Window
+        console.log(this)
+        console.log(`Woof! My name is ${this.name}!`)
+      },
+      puppies: [
+        {
+          name: 'Shelby',
+          age: 1,
+          breed: 'German Shep Mix'
+        },
+        {
+          name: 'Scooby',
+          age: 1,
+          breed: 'German Shep Mix'
+        }
+      ]
+    }
+// This will console log: Woof! My name is Ollie!
+    dog.bark()
+
+        // KEY POINTS //
+    // Arrow Function line 18 & 19
+    // In "inspect" and in console you will see a "Window" in "Console Log"
+    // You can use a lot in the "Window" Object but Main Property Focus: "Document"
+    // Within this is a property called: Body (there are several properties) 
+    // console.log(document) => this will let you see your doc in the console
+
+    </script>
+</body>
+</html>
