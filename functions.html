@@ -5,16 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript103- Functions</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <style>
+      body {
+        background-color: rgba(169, 253, 169, 0.781);
+      }
       h1 {
         text-align: center;
+        color: blue;
       }
       p {
         text-align: center;
       }
       h4 {
         text-align: center;
+      }
+      h5 {
+        text-decoration: underline;
+      }
+      #card {
+        padding-left: 525px;
       }
       ol {
         text-align-last: center;
@@ -29,11 +39,19 @@
 <p>I want to test my console.log skills. So please follow the steps below and I'll be able to introduce you to my dog.</p>
 <h4>DON'T BE STARTLED!</h4>
 <hr>
-<ol>
-  <li>Right Click on the Screen</li>
-  <li>Click on "INSPECT"</li>
-  <li>Click on "CONSOLE"</li>
-</ol>
+
+<div id="card">
+<div class="card border-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header"><h4>Meet Ollie</h4></div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">Follow These 3 Easy Steps</h5>
+    <ol>
+      <li>Right Click on the Screen</li>
+      <li>Click on "INSPECT"</li>
+      <li>Click on "CONSOLE"</li>
+    </ol>
+  </div>
+</div>
 
   <script>
 // We would have used this Array below but instead we replace it with an object
