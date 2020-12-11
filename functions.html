@@ -5,24 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript103- Functions</title>
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+      }
+      ol {
+        text-align-last: center;
+        font-size: x-large;
+      }
+    </style>
 </head>
 
 <body>
 
-    <script>
-// We would have used this Array below but instead we replace it with an object
-  // EX. let dog = ['German Sheppard', 1.5, 'Ollie'] 
+<h1>Hello Employer!</h1>
+<p>I want to test my console.log skills. So please follow the steps below and I'll be able to introduce you to my dog.</p>
+<h4>DON'T BE STARTLED!</h4>
+<hr>
+<ol>
+  <li>Right Click on the Screen</li>
+  <li>Click on "INSPECT"</li>
+  <li>Click on "CONSOLE"</li>
+</ol>
 
-// This is an OBJECT => handles Complex data easier than an Array 
-// You can define multiple properties of data
-// You can also define names/labels called ===  "Key Value Pairs"
+  <script>
+// We would have used this Array below but instead we replace it with an object
+//    EX. let dog = ['German Sheppard', 1.5, 'Ollie'] 
+
+// An OBJECT => handles Complex data easier than an "Array" 
+// You can Define Multiple Properties of Data
+// You can also Define Names/Labels ===  "Key Value Pairs"
+
+// EXAMPLE ONE
 let dog = {
       name: 'Ollie',
       breed: 'German Sheppard',
-      age: 1.5,
+      age: 1,
       bark() {
         // console.log(this)
-        console.log(`Woof! My name is ${this.name}!`)
+        console.log(`
+        Woof! Woof! Woof, My name is ${this.name}! 
+        Sorry, ${this.name} is only ${this.age} years old! 
+        We are trying to teach him not to "Wooof"... "bark"!
+        Thanks for meeting ${this.name}!`)
       },
       puppies: [
         {
@@ -37,46 +69,50 @@ let dog = {
         }
       ]
     }
-// This will console log: Woof! My name is Ollie!
+// This will console log: Woof, My name is Ollie!
     dog.bark()
 
-let cat = {
-  name: 'MeowMeow',
-  breed: 'Brown Tabby',
-  age: 5,
-  // this is an array within an array
-  kitties: [
-    {
-      name: `Puss`,
-      breed: 'Tiger Tabby',
-      age: 1,
-    }, 
-    {
-      name: `N' Boots`,
-      breed: 'Tiger Tabby',
-      age: 1,
-    }
-  ]
-}
+// EXAMPLE TWO
+// let cat = {
+//   name: 'MeowMeow',
+//   breed: 'Brown Tabby',
+//   age: 5,
+//   kitties: 
+//  *This is an array inside of an object
+//   [
+//     {
+//       name: `Puss`,
+//       breed: 'Tiger Tabby',
+//       age: 1,
+//     }, 
+//     {
+//       name: `N' Boots`,
+//       breed: 'Tiger Tabby',
+//       age: 1,
+//     }
+//   ]
+// }
+// console.log(cat)
 
-console.log(cat)
-// // This is called DOT NOTATION: cat.name || cat.age would render that info
-console.log(cat.breed)
-// // This is the DOT NOTATION for kitties: access it by its index[]
-console.log(cat.kitties[1])
-// // This will show spot 0 in the Array of info and console log "Breed"
-console.log(cat.kitties[0].breed)
+// ADDITIONAL CONSOLE LOG FUNCTION
+//  // This is called DOT NOTATION: cat.name || cat.age would render that info
+// console.log(cat.breed)
+//  // This is the DOT NOTATION for kitties: access it by its index[]
+// console.log(cat.kitties[1])
+//  // This will show index 0 in the Array of info and console log "Breed"
+// console.log(cat.kitties[0].breed)
 
+    // JAVA 103 BASIC'S  //
 // You need the word Function
 // firstFunction can be named anything
-// () inside this you your parameter
-// {} inside this is the steps it is running
+// () inside this you can place parameter
+// {} inside this are the actions or what you want your function to do
 
     // function firstFunction () {
 
     // }
-      // Example
-    // function greeting(x, num) {
+    // *Example
+    //   function greeting(x, num) {
     //     console.log(x)
     //     console.log(num + 5)
     // } 
@@ -84,34 +120,34 @@ console.log(cat.kitties[0].breed)
       // greeting('Hello', 4)
       // greeting('Hey', 2)
 
-    //       FUNCTION METHOD  => pass a certain parameter
-    // function greeting () {
-      //   console.log('hello')
+    // FUNCTION METHOD  => pass a certain parameter
+    //  function greeting () {
+    //    console.log('hello')
     // }
-      // greeting()
+    //   greeting()
 
-    // ** ARROW FUNCTION METHOD  => Use this method when you can
-    // const greeting = () => {
-      //   console.log('hello')
+    // *ARROW FUNCTION METHOD  => Use this method when you can
+    //  const greeting = () => {
+    //    console.log('hello')
     // }
-      // greeting()
+    //   greeting()
 
-    // UnderScore FUNCTION METHOD => When passing Nothing through
+    // *UnderScore FUNCTION METHOD => When passing Nothing through
     // const greeting = _ => {
     //   console.log('hello')
     // }
-    // greeting()
+    //   greeting()
 
 
-      // Example One
-    // let x = 5 
-    // const one = () => {
-    //   two(x)
+    // *More Basic Example's
+    //  let x = 5 
+    //  const one = () => {
+    //    two(x)
     // }
-    // const two = (a) => {
-    //   console.log(a)
+    //  const two = (a) => {
+    //    console.log(a)
     // }
-    // one()
+    //   one()
 
     // let count = 0
     // for (let i = 1; i <= 10; i++) {
@@ -120,7 +156,7 @@ console.log(cat.kitties[0].breed)
     // console.log(count)
 
 
-// Function Calling in console
+// Function Calling in "console"
     // function adder (a, b) {
     //   return a + b
     // }
@@ -154,7 +190,5 @@ console.log(cat.kitties[0].breed)
     // greeting('hi', 4)
     // greeting('hey', 2)
     </script>
-
 </body>
-
 </html>
