@@ -10,7 +10,7 @@
 ## We also went over creating an Object and an Array with an Object. 
 > In this section we also went over creating a function within an Object
 
-![mainPage](./photos/mainPage.png)
+![mainPage](./photos/mainPage.PNG)
 
 
 ## LINKS
