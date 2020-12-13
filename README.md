@@ -12,7 +12,7 @@
 ```
 
     - In this section we went over creating a function within an Object
-    - Then being able to call that function 
+    - Then being able to call that function using "this. notation"
     - Listed dogs age
     - Listed dogs breed
     - Listed dogs puppies - in a separate Array
