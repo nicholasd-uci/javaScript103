@@ -35,8 +35,9 @@
 
 ## LINKS
 
-- [javaScript103 Link] Coming Soon!
+- [javaScript103 Link]()
 - [Github Repo Link](https://github.com/nicholasd-uci/javaScript103)
+- [Nicholas Dallas GitHub](https://github.com/nicholasd-uci)
 
 - - -
 © 2020 NPRD, Nicholas Paul Ruiz Dallas
